@@ -1242,16 +1242,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   &:dir(ltr) nav span { transform: scaleX(-1); }
   @media (min-width: 600px) { nav { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 1000px) { nav { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-`,Nl=(0,_.lazy)(()=>S(()=>import(`./StoryPlayer-DQBgU0KT.js`),[]));function Pl(){let e=(0,_.useRef)(null),[t,n]=(0,_.useState)(!1),{t:r}=Zs();return(0,_.useEffect)(()=>{let t=new IntersectionObserver(e=>{e.some(e=>e.isIntersecting)&&(n(!0),t.disconnect())},{rootMargin:`600px`});return e.current&&t.observe(e.current),()=>t.disconnect()},[]),(0,G.jsx)(Fl,{ref:e,children:t?(0,G.jsx)(_.Suspense,{fallback:(0,G.jsx)(`div`,{className:`film-poster`,role:`status`,children:r(`website.story.loading`)}),children:(0,G.jsx)(Nl,{})}):(0,G.jsxs)(`button`,{className:`film-poster`,onClick:()=>n(!0),children:[(0,G.jsx)(Sc,{size:48}),(0,G.jsx)(`span`,{children:r(`website.story.loadFilm`)})]})})}var Fl=Ua.div`
-  .film-poster { width: 100%; aspect-ratio: 1100 / 640; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: ${W.spacing[4]}; border-radius: ${W.radius.xl}; color: ${W.colors.accent[200]}; border: 1px solid ${W.colors.primary[600]}; background: radial-gradient(ellipse, ${W.colors.accent[900]}, ${W.colors.primary[950]}); }
+`,Nl=(0,_.lazy)(()=>S(()=>import(`./StoryPlayer-DQkrpQUr.js`),[]));function Pl(){let e=(0,_.useRef)(null),[t,n]=(0,_.useState)(!1),{t:r}=Zs();return(0,_.useEffect)(()=>{let t=new IntersectionObserver(e=>{e.some(e=>e.isIntersecting)&&(n(!0),t.disconnect())},{rootMargin:`600px`});return e.current&&t.observe(e.current),()=>t.disconnect()},[]),(0,G.jsx)(Fl,{ref:e,children:t?(0,G.jsx)(_.Suspense,{fallback:(0,G.jsx)(`div`,{className:`film-poster`,role:`status`,children:r(`website.story.loading`)}),children:(0,G.jsx)(Nl,{})}):(0,G.jsxs)(`button`,{className:`film-poster`,onClick:()=>n(!0),children:[(0,G.jsx)(Sc,{size:48}),(0,G.jsx)(`span`,{children:r(`website.story.loadFilm`)})]})})}var Fl=Ua.div`
+  .film-poster { width: 100%; aspect-ratio: 1100 / 640; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: ${W.spacing[4]}; border-radius: ${W.radius.xl}; color: var(--accent-hover); border: 1px solid var(--border-default); background: radial-gradient(ellipse, var(--accent-subtle), var(--bg-surface)); }
   @media (max-width: 600px) { .film-poster { aspect-ratio: 650 / 900; } }
 `;function Il(){let{t:e}=Zs();return(0,G.jsx)(Ll,{id:`story`,children:(0,G.jsxs)(`div`,{className:`wrap story-grid`,children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`div`,{className:`eyebrow`,children:e(`website.story.eyebrow`)}),(0,G.jsx)(`h2`,{children:e(`website.story.title`)}),(0,G.jsx)(`p`,{className:`lead`,children:e(`website.story.description`)}),(0,G.jsx)(`ol`,{children:[0,1,2].map(t=>(0,G.jsxs)(`li`,{children:[(0,G.jsxs)(`span`,{children:[`0`,t+1]}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h3`,{children:e(`website.story.steps.${t}.title`)}),(0,G.jsx)(`p`,{children:e(`website.story.steps.${t}.description`)})]})]},t))})]}),(0,G.jsxs)(`div`,{className:`story-film`,children:[(0,G.jsx)(Pl,{}),(0,G.jsx)(`p`,{className:`film-caption`,children:e(`website.story.caption`)})]})]})})}var Ll=Ua.section`
-  padding-block: ${W.spacing[20]}; background: var(--primary-active); color: var(--text-on-primary);
-  h2, h3 { color: inherit; } .eyebrow { color: ${W.colors.accent[200]}; } p { color: ${W.colors.primary[100]}; }
+  padding-block: ${W.spacing[20]}; background: var(--bg-subtle); color: var(--text-primary);
+  h2, h3 { color: inherit; } .eyebrow { color: var(--accent-hover); } p { color: var(--text-secondary); }
   .story-grid { display: grid; gap: ${W.spacing[12]}; align-items: center; }
   ol { display: grid; gap: ${W.spacing[6]}; margin-top: ${W.spacing[8]}; }
   li { display: flex; align-items: start; gap: ${W.spacing[4]}; }
-  li > span { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid ${W.colors.primary[500]}; border-radius: 50%; flex-shrink: 0; font-size: ${W.typography.fontSize.sm}; color: ${W.colors.accent[200]}; }
+  li > span { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid var(--border-default); border-radius: 50%; flex-shrink: 0; font-size: ${W.typography.fontSize.sm}; color: var(--accent-hover); }
   li h3 { font-size: ${W.typography.fontSize.xl}; } li p { font-size: ${W.typography.fontSize.base}; margin-top: ${W.spacing[1]}; }
   .story-film { min-width: 0; } .film-caption { font-size: ${W.typography.fontSize.sm}; text-align: center; margin-top: ${W.spacing[4]}; }
   @media (min-width: 900px) { .story-grid { grid-template-columns: 1fr; } .story-grid > div:first-child { max-width: 900px; } ol { grid-template-columns: repeat(3, 1fr); } }
@@ -1332,7 +1332,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     .feature-grid article:nth-child(2n) { background: linear-gradient(145deg, ${W.colors.accent[50]}, transparent); }
     #capabilities > nav a { background: var(--bg-surface); }
     #capabilities > nav a:hover { background: var(--accent-subtle); }
-    #story { --accent-hover: ${W.colors.accent[200]}; background: ${W.colors.primary[950]}; }
+    #story { background: radial-gradient(ellipse at 70% 40%, var(--accent-subtle), transparent 65%), var(--bg-subtle); }
     .graphic-grid, .graphic-orbit { opacity: .6; }
   }
 `,Gl=N`
